@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Departments</h2>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-info add-new" data-toggle="modal" onclick="openAddModal()"><i class="fa fa-plus"></i> Add New</button>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>NumberOfEmployee</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+               <!-- <tr>
+                    <td>Administration</td>
+                    <td>1</td>
+                    <td>
+                        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                        <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+ 
+    </div>
+    <div class="modal fade" id="createmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+  
+                <!-- header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Department</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+  
+                <!-- body -->
+                <div class="modal-body">
+                    <div class="modal-container">
+  
+                        <input type="hidden" id="id" name="id">
+  
+  
+                        <label for="department"><b>Department</b></label>
+                        <input type="text" placeholder="Enter Department" name="department" id="department" required>
+  
+                        <label for="phone"><b>NumberOfEmployee</b></label>
+                        <input type="text" placeholder="Enter NOEmployee" name="NOEmployee" id="NOEmployee" required>
+                    </div>
+                </div>
+  
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="save()">Save</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    </div>
+    <div class="alert alert-success" id="success-alert">
+        <button type="button" class="close">Close</button>
+    </div>
+</div>
